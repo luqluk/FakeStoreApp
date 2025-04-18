@@ -2,7 +2,8 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     kotlin("plugin.serialization") version "2.1.0"
-
+    id("org.jetbrains.kotlin.kapt")
+    id ("kotlin-parcelize")
 }
 
 android {
@@ -56,6 +57,12 @@ dependencies {
     api(libs.koin.androidx.compose)
     api(libs.koin.android)
     api(libs.koin.core)
+
+    //room
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    kapt(libs.androidx.room.compiler)
+
 
     // Chucker
     debugImplementation(libs.library)

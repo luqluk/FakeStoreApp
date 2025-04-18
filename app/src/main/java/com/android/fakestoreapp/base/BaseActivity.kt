@@ -8,6 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 import com.android.fakestoreapp.R
+import com.android.fakestoreapp.util.baseSnackBar
 
 abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
@@ -52,5 +53,13 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
     fun showToast(msg: String, length: Int = Toast.LENGTH_SHORT){
         Toast.makeText(baseContext, msg, length).show()
+    }
+
+    fun snackBarSuccess(message: String) {
+        baseSnackBar(message, R.color.success, binding)
+    }
+
+    fun snackBarError(message: String) {
+        baseSnackBar(message, R.color.error, binding)
     }
 }

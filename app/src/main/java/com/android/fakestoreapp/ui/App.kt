@@ -1,6 +1,7 @@
 package com.android.fakestoreapp.ui
 
 import android.app.Application
+import com.android.core.di.databasemodule.product.databaseModule
 import com.android.core.di.dispatchermodule.dispatcherModule
 import com.android.core.di.networkmodule.networkModule
 import com.android.core.di.repositorymodule.repositoryModule
@@ -19,15 +20,15 @@ class App : Application() {
             androidContext(this@App)
             modules(
                 listOf(
+                    databaseModule,
                     dispatcherModule,
                     networkModule,
                     serviceCoreModule,
                     repositoryModule,
-                    viewModelModule
+                    viewModelModule,
+
                 )
             )
         }
     }
-
-
 }

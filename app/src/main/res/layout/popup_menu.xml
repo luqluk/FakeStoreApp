@@ -1,0 +1,22 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="12dp"
+    android:elevation="8dp"
+    android:foreground="?selectableItemBackground"
+    android:background="@drawable/bg_popup_menu">
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/metropolis_regular"
+        android:text="@string/delete_from_the_list"
+        android:textColor="@color/black" />
+
+</androidx.cardview.widget.CardView>

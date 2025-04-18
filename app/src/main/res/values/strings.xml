@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">FakeStoreApp</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="username_should_filled">Username should filled!</string>
+    <string name="password_cannot_be_empty">Password cannot be empty!</string>
+    <string name="username">Username</string>
+    <string name="there_is_no_connection">There is no connection</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="price">$%s</string>
+    <string name="check_out">CHECK OUT</string>
+    <string name="total_amount">Total amount:</string>
+    <string name="delete_from_the_list">Delete from the list</string>
+    <string name="success">Success!</string>
+    <string name="desc_order">Your order will be delivered soon. Thank you for choosing our app!</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_no_123456">Order No123456</string>
+    <string name="date">18-04-2025</string>
+    <string name="units">Units:</string>
+    <string name="items">%s Items</string>
+
 </resources>
